@@ -64,8 +64,8 @@ Ikuti langkah ini untuk menjalankan backend di komputer lokal:
 
 1.  **Clone Repositori**
     ```bash
-    git clone [https://github.com/username-kamu/geoaset-backend.git](https://github.com/username-kamu/geoaset-backend.git)
-    cd geoaset-backend
+    git clone https://github.com/penoFahmi/geo-aset-patrol-backend.git
+    cd geo-aset-patrol-backend
     ```
 
 2.  **Install Dependencies**
