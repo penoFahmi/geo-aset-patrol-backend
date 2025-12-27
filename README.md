@@ -1,7 +1,7 @@
 # GeoAset Patrol API (Backend)
 
 > **Sistem Informasi Geografis & Monitoring Patroli Aset Daerah**
-> *Backend Service untuk Skripsi Teknik Informatika - Universitas Muhammadiyah Pontianak.*
+> *Backend Service.*
 
 ![Laravel](https://img.shields.io/badge/Laravel-12.x-red?style=flat-square&logo=laravel)
 ![PHP](https://img.shields.io/badge/PHP-8.2-blue?style=flat-square&logo=php)
