@@ -37,14 +37,14 @@ class AuthController extends Controller
             ], 401);
         }
 
-        if (!$user->hasVerifiedEmail()) {
-            return response()->json([
-                'meta' => ['code' => 403, 'status' => 'error', 'message' => 'Akun belum aktif'],
-                'data' => [
-                    'error' => 'Email belum diverifikasi. Silakan cek inbox email Anda.'
-                ]
-            ], 403);
-        }
+        // if (!$user->hasVerifiedEmail()) {
+        //     return response()->json([
+        //         'meta' => ['code' => 403, 'status' => 'error', 'message' => 'Akun belum aktif'],
+        //         'data' => [
+        //             'error' => 'Email belum diverifikasi. Silakan cek inbox email Anda.'
+        //         ]
+        //     ], 403);
+        // }
 
         // 5. Generate Token Sanctum
         // Hapus token lama jika ingin single device login (opsional)

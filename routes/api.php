@@ -19,7 +19,7 @@ Route::get('/email/verify/{id}/{hash}', [AuthController::class, 'verifyEmail'])
     ->name('verification.verify');
 Route::apiResource('regions', RegionController::class);
 
-Route::middleware('auth:sanctum')->group(function () {
+Route::middleware('auth:sanctum, verified')->group(function () {
 
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::get('/me', function (Request $request) {
