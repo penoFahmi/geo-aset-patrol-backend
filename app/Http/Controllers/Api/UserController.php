@@ -20,7 +20,6 @@ class UserController extends Controller
      */
     public function index()
     {
-        // Tips Pro: Gunakan pagination biar kalau data ribuan server gak berat
         $users = User::orderBy('created_at', 'desc')->paginate(10);
 
         return response()->json([

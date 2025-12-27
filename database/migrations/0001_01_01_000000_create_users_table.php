@@ -21,6 +21,9 @@ return new class extends Migration
             $table->enum('role', ['admin', 'officer'])->default('officer');
             $table->string('nip')->nullable();
             $table->string('phone')->nullable();
+            $table->double('last_latitude')->nullable();
+            $table->double('last_longitude')->nullable();
+            $table->timestamp('last_seen_at')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
