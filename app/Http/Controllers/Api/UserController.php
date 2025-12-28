@@ -20,7 +20,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::orderBy('created_at', 'desc')->paginate(10);
+        // $users = User::orderBy('created_at', 'desc')->paginate(10);
+        $users = User::orderBy('created_at', 'desc')->get();
 
         return response()->json([
             'meta' => ['code' => 200, 'status' => 'success', 'message' => 'Data user berhasil diambil'],

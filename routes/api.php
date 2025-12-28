@@ -26,8 +26,15 @@ Route::middleware('auth:sanctum, verified')->group(function () {
         return $request->user();
     });
 
-    Route::get('/dashboard', [DashboardController::class, 'index']);
+    // Route::middleware('admin')->group(function () {
+    //     Route::get('/users', [UserController::class, 'index']);
+    //     Route::get('/users/{id}', [UserController::class, 'show']);
+    //     Route::post('/users', [UserController::class, 'store']);
+    //     Route::patch('/users/{id}', [UserController::class, 'update']);
+    //     Route::delete('/users/{id}', [UserController::class, 'destroy']);
+    // });
 
+    Route::get('/dashboard', [DashboardController::class, 'index']);
     Route::apiResource('users', UserController::class);
     Route::apiResource('locations', LocationController::class);
     Route::apiResource('assets', AssetController::class);
